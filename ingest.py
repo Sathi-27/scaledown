@@ -15,7 +15,7 @@ def load_code(path):
 print("Loading code...")
 docs = load_code("sample_repo")
 
-splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
+splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
 chunks = splitter.create_documents(docs)
 
 embedding = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
