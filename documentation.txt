@@ -1,0 +1,296 @@
+# 📘 Code Documentation Navigator
+
+## AI-Powered Semantic Search System for Automated Code Understanding
+
+---
+
+## 1. Project Title
+
+**Code Documentation Navigator**
+AI-Powered Semantic Search and Documentation System
+
+---
+
+## 2. Abstract
+
+Modern software projects often suffer from poor documentation, making code understanding difficult for developers, students, and maintainers. The **Code Documentation Navigator** solves this problem by using Artificial Intelligence and Retrieval-Augmented Generation (RAG) to automatically analyze source code and generate human-readable explanations.
+
+The system allows users to upload a ZIP file of any project. It extracts the source code, processes it using semantic embeddings, stores it in a vector database, and enables users to ask natural language questions. The system retrieves the most relevant code sections and generates clear, understandable explanations using a free open-source language model.
+
+This project demonstrates the practical application of AI in software engineering, documentation automation, and developer productivity tools.
+
+---
+
+## 3. Problem Statement
+
+Developers face the following problems in real-world projects:
+
+* Poor or missing documentation
+* Difficulty understanding large codebases
+* High onboarding time for new developers
+* Manual documentation is time-consuming and error-prone
+* Code understanding requires reading many files
+
+There is a need for an **intelligent system** that can:
+
+* Read source code automatically
+* Understand code meaning
+* Answer questions in natural language
+* Generate explanations
+* Work without paid APIs
+
+---
+
+## 4. Objectives
+
+The objectives of this project are:
+
+* Build an AI system to understand source code
+* Enable semantic search on code
+* Generate explanations instead of raw code
+* Support ZIP upload of projects
+* Create a user-friendly web interface
+* Use only free and open-source AI models
+* Provide automated documentation
+
+---
+
+## 5. Scope of the Project
+
+### Included:
+
+* ZIP upload of projects
+* Multi-language code support (Python, JS, Java, C++, etc.)
+* AI-based code understanding
+* Semantic search
+* Question answering
+* Explanation generation
+* Web UI
+* Local processing
+* Free models
+
+### Not Included:
+
+* Paid APIs (OpenAI, Claude, Gemini)
+* Cloud deployment
+* Authentication systems
+* Multi-user accounts
+* Code execution
+
+---
+
+## 6. System Architecture
+
+### High-Level Architecture:
+
+```
+User
+ ↓
+Web UI (Streamlit)
+ ↓
+ZIP Upload
+ ↓
+Code Extraction
+ ↓
+Text Processing
+ ↓
+Chunking
+ ↓
+Embedding Model
+ ↓
+Vector Database (Chroma)
+ ↓
+Semantic Search
+ ↓
+Context Retrieval
+ ↓
+LLM (Flan-T5)
+ ↓
+Answer Generation
+ ↓
+Explanation to User
+```
+
+---
+
+## 7. Technologies Used
+
+### Programming Language:
+
+* Python
+
+### Frameworks & Libraries:
+
+* Streamlit (UI)
+* LangChain (RAG framework)
+* ChromaDB (Vector database)
+* HuggingFace Transformers
+* Sentence Transformers
+
+### AI Models:
+
+* `all-MiniLM-L6-v2` → Embeddings
+* `google/flan-t5-base` → Explanation generation
+
+### Other Tools:
+
+* ZIP handling
+* OS file system
+* Recursive text splitting
+
+---
+
+## 8. System Modules
+
+### 8.1 ZIP Upload Module
+
+* Accepts project ZIP file
+* Extracts files
+* Creates workspace directory
+
+### 8.2 Code Loader Module
+
+* Reads source code files
+* Supports multiple file formats
+* Filters valid programming files
+
+### 8.3 Text Splitter Module
+
+* Breaks large files into chunks
+* Prevents context overflow
+* Optimizes retrieval
+
+### 8.4 Embedding Module
+
+* Converts code to vectors
+* Semantic representation
+* Uses MiniLM model
+
+### 8.5 Vector Database Module
+
+* Stores embeddings
+* Enables similarity search
+* Persistent storage using ChromaDB
+
+### 8.6 Retrieval Module
+
+* Finds relevant code chunks
+* Semantic matching
+
+### 8.7 LLM Module
+
+* Uses Flan-T5 model
+* Generates explanations
+* Converts code context to human language
+
+### 8.8 UI Module
+
+* Streamlit web interface
+* File upload
+* Question input
+* Answer display
+* Code preview
+
+---
+
+## 9. Workflow
+
+1. User uploads ZIP project
+2. System extracts files
+3. Code files are loaded
+4. Code is split into chunks
+5. Embeddings are generated
+6. Stored in vector database
+7. User asks question
+8. Relevant code retrieved
+9. Context sent to LLM
+10. LLM generates explanation
+11. Explanation shown to user
+
+---
+
+## 10. Features
+
+* AI-powered documentation
+* Semantic search
+* Natural language interface
+* Automated code understanding
+* Multi-language support
+* Offline processing
+* Free AI models
+* Scalable architecture
+* Professional UI
+
+---
+
+## 11. Advantages
+
+* No manual documentation required
+* Reduces developer onboarding time
+* Improves code understanding
+* Works without paid APIs
+* Local deployment
+* Privacy-friendly
+* Cost-free
+* Highly scalable
+* Real-world industry use-case
+
+---
+
+## 12. Applications
+
+* Software documentation automation
+* Codebase understanding
+* Educational tools
+* Developer onboarding
+* Internship projects
+* Enterprise systems
+* Code audits
+* AI developer tools
+
+---
+
+## 13. Future Enhancements
+
+* Multi-language explanations
+* Voice input
+* Chat interface
+* PDF documentation export
+* UML diagram generation
+* Architecture diagram generation
+* Cloud deployment
+* Team collaboration
+* GitHub integration
+* Version comparison
+
+---
+
+## 14. Conclusion
+
+The **Code Documentation Navigator** is a powerful AI-driven system that demonstrates how modern AI techniques can transform software development workflows. By combining semantic search, vector databases, and large language models, the system provides automated documentation and intelligent code understanding.
+
+This project proves that professional AI systems can be built using free and open-source technologies without relying on paid APIs. It has strong academic value, real-world applicability, and industry relevance, making it suitable for academic projects, internships, and enterprise prototypes.
+
+---
+
+## 15. Keywords
+
+AI, RAG, Semantic Search, Code Documentation, Vector Database, LangChain, ChromaDB, Streamlit, LLM, Machine Learning, NLP, Software Engineering
+
+---
+
+## 16. Project Type
+
+* AI Project
+* Machine Learning Project
+* NLP Project
+* Software Engineering Project
+* Final Year Project
+* Major Project
+* Internship Project
+
+---
+
+## 17. License
+
+This project uses open-source libraries and free models and is intended for educational and academic purposes.
